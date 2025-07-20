@@ -119,6 +119,12 @@ abstract class Table
             return array();
         }
     }
+
+      public static function getLastInsertId()
+    {
+        $pConn = self::getConn(); // Asegúrate que este método existe y devuelve un objeto PDO
+        return $pConn->lastInsertId();
+    }
 }
 
 ?>
