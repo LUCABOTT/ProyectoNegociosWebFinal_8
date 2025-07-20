@@ -65,7 +65,7 @@ class Security extends \Dao\Table
         unset($newUser["userpswdchg"]);
 
         $newUser["useremail"] = $email;
-        $newUser["username"] = "John Doe";
+        $newUser["username"] = explode('@', $email)[0];
         $newUser["userpswd"] = $hashedPassword;
         $newUser["userpswdest"] = Estados::ACTIVO;
         $newUser["userpswdexp"] = date('Y-m-d', time() + 7776000);  //(3*30*24*60*60) (m d h mi s)
@@ -81,7 +81,23 @@ class Security extends \Dao\Table
             now(), :userpswdest, :userpswdexp, :userest, :useractcod,
             now(), :usertipo);";
 
-        return self::executeNonQuery($sqlIns, $newUser);
+        $result = self::executeNonQuery($sqlIns, $newUser);
+
+        if ($result) {
+            $usercod = self::getLastInsertId(); // se otiene el usercod para colocarlos despies aen roesusuarios
+
+            $insertRol = "INSERT INTO roles_usuarios (usercod, rolescod, roleuserest, roleuserfch, roleuserexp) VALUES (:usercod, :rolescod, :roleuserest, :roleuserfch, :roleuserexp);";
+            self::executeNonQuery($insertRol, [
+                "usercod" => $usercod,
+                "rolescod" => 'PBL',
+                "roleuserest" => 'ACT',
+                "roleuserfch" => date("Y-m-d H:i:s"),
+                "roleuserexp" => (new \DateTime())->modify('+10 years')->format('Y-m-d H:i:s')
+
+            ]);
+        }
+
+        return $result;
 
     }
 
