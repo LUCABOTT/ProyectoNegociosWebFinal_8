@@ -2,7 +2,7 @@
 
 namespace Controllers\Funciones;
 
-use Controllers\PublicController;
+use Controllers\PrivateController;
 use Dao\Funciones\Funciones as FuncionesDao;
 use Error;
 use Utilities\Site;
@@ -12,7 +12,7 @@ use Views\Renderer;
 const LIST_URL = "index.php?page=Funciones-Funciones";
 const XSR_KEY = "xsrToken_categorias";
 
-class Funcion extends PublicController
+class Funcion extends PrivateController
 {
 
     private array $viewData;

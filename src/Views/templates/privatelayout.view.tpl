@@ -33,12 +33,6 @@
             <li><a href="{{nav_url}}">{{nav_label}}</a></li>
         {{endfor NAVIGATION}}
         <li><a href="index.php?page=sec_logout"><i class="fas fa-sign-out-alt"></i>&nbsp;Salir</a></li>
-        <li><a href="index.php?page=Usuarios_Usuarios"><i class="fas fa-sign-out-alt"></i>&nbsp;Usuarios</a></li>
-       <li><a href="index.php?page=Roles_Roles"><i class="fas fa-sign-out-alt"></i>&nbsp;Roles</a></li>
-       <li><a href="index.php?page=Funciones_Funciones"><i class="fas fa-sign-out-alt"></i>&nbsp;Funciones</a></li>
-        <li><a href="index.php?page=FuncionesRoles_FuncionesRoles"><i class="fas fa-sign-out-alt"></i>&nbsp;Funciones Roles</a></li>
-     <li><a href="index.php?page=RolesUsuarios_RolesUsuarios"><i class="fas fa-sign-out-alt"></i>&nbsp;Roles usuarios</a></li>
-    
       </ul>
     </nav>
     {{with login}}

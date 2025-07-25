@@ -20,7 +20,54 @@
     {
       "id":"Menu_PaymentCheckout",
       "nav_url": "index.php?page=Checkout_Checkout",
-      "nav_label": "Carretilla de Compra"
+      "nav_label":"<i class=\"fas fa-table\"></i>&nbsp;Carretilla Compra"
+    },
+    
+      {
+      "id": "Menu_MantenimientoFunciones",
+      "nav_url": "index.php?page=Funciones_Funciones",
+      "nav_label":"<i class=\"fas fa-table\"></i>&nbsp;Mantenimiento Funciones",
+      "fncod": "Controllers\\Funciones\\Funciones"
+    },
+    {
+      "id": "Menu_MantenimientoFuncionesRoles",
+      "nav_url": "index.php?page=FuncionesRoles_FuncionesRoles",
+      "nav_label":"<i class=\"fas fa-table\"></i>&nbsp;Mantenimiento Funciones Roles",
+      "fncod": "Controllers\\FuncionesRoles\\FuncionesRoles"
+    },
+    {
+      "id": "Menu_MantenimientoProductos",
+      "nav_url": "index.php?page=MantenimientosProductos_MantenimientosProductos",
+      "nav_label":"<i class=\"fas fa-table\"></i>&nbsp;Mantenimiento Productos",
+      "fncod": "Controllers\\MantenimientosProductos\\MantenimientosProductos"
+    },
+    {
+      "id": "Menu_MantenimientoNovedades",
+      "nav_url": "index.php?page=Novedades_Novedades",
+     "nav_label":"<i class=\"fas fa-table\"></i>&nbsp;Mantenimiento Novedades",
+      "fncod": "Controllers\\Novedades\\Novedades"
+    },
+     {
+      "id": "Menu_MantenimientoOfertas",
+      "nav_url": "index.php?page=Sales_Sales",
+     "nav_label":"<i class=\"fas fa-table\"></i>&nbsp;Mantenimiento Ofertas",
+      "fncod": "Controllers\\Sales\\Sales"
+    },
+    {
+      "id": "Menu_MantenimientoUsuarios",
+      "nav_url": "index.php?page=Usuarios_Usuarios",
+     "nav_label":"<i class=\"fas fa-table\"></i>&nbsp;Mantenimiento Usuarios",
+      "fncod": "Controllers\\Usuarios\\Usuarios"
+    },
+    {
+      "id": "Menu_MantenimientoRolesUsuarios",
+      "nav_url": "index.php?page=RolesUsuarios_RolesUsuarios",
+     "nav_label":"<i class=\"fas fa-table\"></i>&nbsp;Mantenimiento Roles Usuarios",
+      "fncod": "Controllers\\RolesUsuarios\\RolesUsuarios"
     }
-  ]
+    
+  ] 
 }
+
+ 
+         

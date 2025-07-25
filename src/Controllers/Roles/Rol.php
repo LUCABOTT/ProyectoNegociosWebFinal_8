@@ -2,7 +2,7 @@
 
 namespace Controllers\Roles;
 
-use Controllers\PublicController;
+use Controllers\PrivateController;
 use Dao\Roles\Roles as RolesDao;
 use Error;
 use Utilities\Site;
@@ -12,7 +12,7 @@ use Views\Renderer;
 const LIST_URL = "index.php?page=Roles-Roles";
 const XSR_KEY = "xsrToken_roles";
 
-class Rol extends PublicController
+class Rol extends PrivateController
 {
     private array $viewData;
     private array $estados;
