@@ -3,6 +3,7 @@ CREATE TABLE products (
     `productName` varchar(255) NOT NULL,
     `productDescription` text NOT NULL,
     `productPrice` decimal(10,2) NOT NULL,
+    `productStock` int NOT NULL,
     `productImgUrl` varchar(255) NOT NULL,
     `productStatus` char(3) NOT NULL,
     PRIMARY KEY (`productId`)

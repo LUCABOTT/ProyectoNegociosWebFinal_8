@@ -1,5 +1,7 @@
 <?php
+
 namespace Controllers\Sec;
+
 class Login extends \Controllers\PublicController
 {
     private $txtEmail = "";
@@ -9,7 +11,7 @@ class Login extends \Controllers\PublicController
     private $generalError = "";
     private $hasError = false;
 
-    public function run() :void
+    public function run(): void
     {
         if ($this->isPostBack()) {
             $this->txtEmail = $_POST["txtEmail"];
@@ -54,7 +56,13 @@ class Login extends \Controllers\PublicController
                             $dbUser["usercod"],
                             $dbUser["username"],
                             $dbUser["useremail"]
+
                         );
+                        $_SESSION["userRoles"] = array_column(
+                            \Dao\Security\Security::getRolesByUsuario($dbUser["usercod"]),
+                            "rolescod"
+                        );
+
                         if (\Utilities\Context::getContextByKey("redirto") !== "") {
                             \Utilities\Site::redirectTo(
                                 \Utilities\Context::getContextByKey("redirto")
@@ -78,4 +86,3 @@ class Login extends \Controllers\PublicController
         \Views\Renderer::render("security/login", $dataView);
     }
 }
-?>

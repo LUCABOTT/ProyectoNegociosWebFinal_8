@@ -2,7 +2,7 @@
 
 namespace Controllers\Usuarios;
 
-use Controllers\PublicController;
+use Controllers\PrivateController;
 use Dao\Usuarios\Usuarios as UsuariosDao;
 use Utilities\Site;
 use Utilities\Validators;
@@ -11,7 +11,7 @@ use Views\Renderer;
 const LIST_URL = "index.php?page=Usuarios-Usuarios";
 const XSR_KEY = "xsrToken_usuario";
 
-class Usuario extends PublicController
+class Usuario extends PrivateController
 {
     private array $viewData;
     private array $estados;

@@ -21,7 +21,13 @@ class Nav
             $userID = Security::getUserId();
             $navigationData = self::getNavFromJson()["private"];
             foreach ($navigationData as $navEntry) {
-                if (Security::isAuthorized($userID, $navEntry["id"], 'MNU')) {
+                if (isset($navEntry["fncod"])) {
+                    // Validar con fncod, que es la función real ligada al permiso
+                    if (Security::isAuthorized($userID, $navEntry["fncod"], 'FNC')) {
+                        $tmpNAVIGATION[] = $navEntry;
+                    }
+                } else {
+                    // Si no tiene fncod, mostrar por defecto
                     $tmpNAVIGATION[] = $navEntry;
                 }
             }
@@ -56,10 +62,6 @@ class Nav
         return $jsonData;
     }
 
-    private function __construct()
-    {
-    }
-    private function __clone()
-    {
-    }
+    private function __construct() {}
+    private function __clone() {}
 }
