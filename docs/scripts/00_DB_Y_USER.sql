@@ -1,6 +1,5 @@
 
-CREATE DATABASE ProductosDigitales
-    DEFAULT CHARACTER SET = 'utf8mb4';
+CREATE SCHEMA `ProductosDigitales` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 
 
 CREATE USER 'ProductosDigitales'@'%' IDENTIFIED BY 'ProductosDigitales';
