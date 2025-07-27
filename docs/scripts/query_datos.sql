@@ -73,15 +73,15 @@ INSERT INTO `products` (`productId`, `productName`, `productDescription`, `produ
   INSERT INTO `sales` (`saleId`, `productId`, `salePrice`, `saleStart`, `saleEnd`) VALUES
   (5, 9, 2000, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
   INSERT INTO `sales` (`saleId`, `productId`, `salePrice`, `saleStart`, `saleEnd`) VALUES
-  (1, 11, 350, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
+  (6, 11, 350, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
   INSERT INTO `sales` (`saleId`, `productId`, `salePrice`, `saleStart`, `saleEnd`) VALUES
-  (1, 13, 250, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
+  (7, 13, 250, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
   INSERT INTO `sales` (`saleId`, `productId`, `salePrice`, `saleStart`, `saleEnd`) VALUES
-  (1, 15, 300, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
+  (8, 15, 300, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
   INSERT INTO `sales` (`saleId`, `productId`, `salePrice`, `saleStart`, `saleEnd`) VALUES
-  (1, 17, 400, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
+  (9, 17, 400, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
   INSERT INTO `sales` (`saleId`, `productId`, `salePrice`, `saleStart`, `saleEnd`) VALUES
-  (1, 19, 90, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
+  (10, 19, 90, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
 
 
   INSERT INTO `highlights` ( `highlightId`, `productId`, `highlightStart`, `highlightEnd`) VALUES
@@ -96,12 +96,12 @@ INSERT INTO `products` (`productId`, `productName`, `productDescription`, `produ
     INSERT INTO `highlights` ( `highlightId`, `productId`, `highlightStart`, `highlightEnd`) VALUES
   (5, 10, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
      INSERT INTO `highlights` ( `highlightId`, `productId`, `highlightStart`, `highlightEnd`) VALUES
-  (5, 12, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
+  (6, 12, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
      INSERT INTO `highlights` ( `highlightId`, `productId`, `highlightStart`, `highlightEnd`) VALUES
-  (5, 14, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
+  (7, 14, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
      INSERT INTO `highlights` ( `highlightId`, `productId`, `highlightStart`, `highlightEnd`) VALUES
-  (5, 16, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
+  (8, 16, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
      INSERT INTO `highlights` ( `highlightId`, `productId`, `highlightStart`, `highlightEnd`) VALUES
-  (5, 18, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
+  (9, 18, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
      INSERT INTO `highlights` ( `highlightId`, `productId`, `highlightStart`, `highlightEnd`) VALUES
-  (5, 20, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
+  (10, 20, '2023-08-01 00:00:00', '2023-10-31 23:59:59');
