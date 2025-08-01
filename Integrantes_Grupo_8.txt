@@ -1,11 +1,9 @@
 Integrantes Grupo 8 Negocios Web Sección 2001
 
-Luca Lizzandro Botteri Milla 0318200201068
+Luca Lizzandro Botteri Milla 0318200201068 github: LUCABOTT
 
-Helder Isaac Ramos Aguilar  0801200402460
+Helder Isaac Ramos Aguilar  0801200402460  github: HelderRamos20
 
-Jose Humberto Mejia Salgado 0823200500019
+Jose Humberto Mejia Salgado 0823200500019  github: josee09
 
-Jafet Onan Caceres Rodriguez 0601200301919
-
-Brayan Adalid Cruz Osorio 1503199500704
+Jafet Onan Caceres Rodriguez 0601200301919  github: JCaceres-U
