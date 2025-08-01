@@ -11,10 +11,10 @@ INSERT INTO `products` (`productId`, `productName`, `productDescription`, `produ
 (4, 'Mouse Pad', 'Alfombrilla para mouse de gran tamaño con superficie antideslizante y bordes reforzados, perfecta para gaming o trabajo de precisión.', 1000, 100, 'public/imagenes/Pad.jpg', 'ACT');
 
 INSERT INTO `products` (`productId`, `productName`, `productDescription`, `productPrice`, `productStock`, `productImgUrl`, `productStatus`) VALUES
-(5, 'Laptop OMEN', 'Laptop gamer HP OMEN con procesador Intel i7, 16GB de RAM, tarjeta gráfica NVIDIA y pantalla de 144Hz para máximo rendimiento.', 1500, 40, 'public/imagenes/Laptop_Omen.jpg', 'ACT');
+(5, 'Laptop OMEN', 'Laptop gamer HP OMEN con procesador Intel i7, 16GB de RAM, tarjeta gráfica NVIDIA y pantalla de 144Hz para máximo rendimiento.', 1500, 40, 'public/imagenes/Laptod_Omen.jpg', 'ACT');
 
 INSERT INTO `products` (`productId`, `productName`, `productDescription`, `productPrice`, `productStock`, `productImgUrl`, `productStatus`) VALUES
-(6, 'Laptop ASUS', 'Laptop ASUS con diseño delgado, procesador Ryzen 7, SSD de 512GB y gráfica integrada, ideal para trabajo y entretenimiento.', 2000, 30, 'public/imagenes/laptop_Asus.jpg', 'ACT');
+(6, 'Laptop ASUS', 'Laptop ASUS con diseño delgado, procesador Ryzen 7, SSD de 512GB y gráfica integrada, ideal para trabajo y entretenimiento.', 2000, 30, 'public/imagenes/laptod_Asus.jpg', 'ACT');
 
 INSERT INTO `products` (`productId`, `productName`, `productDescription`, `productPrice`, `productStock`, `productImgUrl`, `productStatus`) VALUES
 (7, 'PlayStation 5', 'Consola PlayStation 5 con gráficos 4K, disco SSD ultrarrápido y mando DualSense para una nueva generación de videojuegos.', 2500, 25, 'public/imagenes/PlayStation5.jpg', 'ACT');
